@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:text="Select Type of Measurement"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Title" />
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/MeasurementType" />
+    <Button
+        android:text="Enter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Enter" />
+    <TextView
+        android:text="Select Starting Units"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/SelectStart" />
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/StartUnits" />
+    <TextView xmlns:p2="http://schemas.android.com/tools"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/SelectTarget"
+        p2:visibility="visible"
+        android:text="Select Ending Units" />
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TargetUnits" />
+    <TextView xmlns:tools="http://schemas.android.com/tools"
+        android:text="Enter number"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="39.5dp"
+        android:id="@+id/EnterNumber"
+        tools:visibility="visible" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Pounds" />
+    <Button xmlns:p2="http://schemas.android.com/tools"
+        android:text="Convert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Convert"
+        p2:visibility="visible" />
+    <TextView xmlns:p2="http://schemas.android.com/tools"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="66.5dp"
+        android:id="@+id/Answer"
+        p2:visibility="visible"
+        android:layout_marginBottom="20.5dp" />
+    <Button
+        android:text="Reset"
+        android:layout_width="match_parent"
+        android:layout_height="47.5dp"
+        android:id="@+id/Reset"
+        android:layout_marginBottom="0.0dp" />
+</LinearLayout>
