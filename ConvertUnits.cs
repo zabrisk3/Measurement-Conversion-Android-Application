@@ -23,13 +23,13 @@ namespace MeasureConvert
 			this.value_1 = Double.Parse(value);
 		}
 	
-		public double multiply_divide(double number2, double number1, int sign)
+		private double multiply_divide(double number2, double number1, int sign)
 		{
 			if (sign > 0) { return RoundToSignificantDigits(number1 * number2, 4); }
 			else { return RoundToSignificantDigits(number1 / number2, 4); }
 		}
 
-		double RoundToSignificantDigits(double d, int digits)
+		private RoundToSignificantDigits(double d, int digits)
 		{
 			double EPSILON = 0.00000001;
 			if (Math.Abs(d) < EPSILON)
