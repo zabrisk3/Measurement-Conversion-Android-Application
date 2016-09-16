@@ -37,11 +37,6 @@ namespace MeasureConvert
 				ConvertTemperature converttemp = new ConvertTemperature(startingunit, endingunit, value);
 				return converttemp.return_value();
 			}
-		
-		}
-
-		public ClassAssign()
-		{
 		}
 	}
 }
