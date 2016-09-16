@@ -5,7 +5,7 @@ namespace MeasureConvert
 	{
 		private String[] labels = new String[3] { "Fahrenheit", "Celsius", "Kelvin" };
 
-		double RoundToSignificantDigits(double d, int digits)
+		private double RoundToSignificantDigits(double d, int digits)
 		{
 			double EPSILON = 0.00000001;
 			if (Math.Abs(d) < EPSILON)
@@ -17,19 +17,19 @@ namespace MeasureConvert
 			return scale * Math.Round(d / scale, digits);
 		}
 
-		public double Fahrenheit_Celsius(double number, int sign)
+		private public double Fahrenheit_Celsius(double number, int sign)
 		{
 			if (sign > 0) { return RoundToSignificantDigits(number = 5.0 / 9.0 * (number - 32.0), 4); }
 			else { return RoundToSignificantDigits(number = 9.0 / 5.0 * number + 32.0, 4); }
 		}
 
-		public double Celsius_Kelvin(double number, int sign)
+		private public double Celsius_Kelvin(double number, int sign)
 		{
 			if (sign > 0) { return RoundToSignificantDigits(number + 273.15, 4); }
 			else { return RoundToSignificantDigits(number - 273.15, 4); }
 		}
 
-		public double numbers_functions(int assign, double value, int sign)
+		private public double numbers_functions(int assign, double value, int sign)
 		{
 			double answer = -1.0;
 			switch (assign)
